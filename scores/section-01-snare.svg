@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <title>Snare Drum Ostinato - Boléro</title>
+  <style>
+    .grid {
+      stroke: #ccc;
+      stroke-width: 1;
+      fill: none;
+    }
+    .beat {
+      fill: #4a6fa5;
+      stroke: #2c3e50;
+      stroke-width: 2;
+    }
+    .accent {
+      fill: #e74c3c;
+    }
+    .text {
+      font-family: sans-serif;
+      font-size: 14px;
+      fill: #333;
+    }
+  </style>
+  <rect width="800" height="200" fill="#f9f9f9" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Time grid (24 beats, representing 2 bars of 3/4) -->
+  <g id="grid">
+    <line x1="50" y1="50" x2="750" y2="50" class="grid"/>
+    <line x1="50" y1="150" x2="750" y2="150" class="grid"/>
+    <!-- vertical dividers for each beat -->
+    <g id="beats">
+      <line x1="50" y1="50" x2="50" y2="150" class="grid"/>
+      <line x1="750" y1="50" x2="750" y2="150" class="grid"/>
+      <!-- 24 beat positions -->
+      <g id="beat-positions">
+        <!-- Generate 24 lines -->
+        <line x1="80" y1="50" x2="80" y2="150" class="grid"/>
+        <line x1="110" y1="50" x2="110" y2="150" class="grid"/>
+        <line x1="140" y1="50" x2="140" y2="150" class="grid"/>
+        <line x1="170" y1="50" x2="170" y2="150" class="grid"/>
+        <line x1="200" y1="50" x2="200" y2="150" class="grid"/>
+        <line x1="230" y1="50" x2="230" y2="150" class="grid"/>
+        <line x1="260" y1="50" x2="260" y2="150" class="grid"/>
+        <line x1="290" y1="50" x2="290" y2="150" class="grid"/>
+        <line x1="320" y1="50" x2="320" y2="150" class="grid"/>
+        <line x1="350" y1="50" x2="350" y2="150" class="grid"/>
+        <line x1="380" y1="50" x2="380" y2="150" class="grid"/>
+        <line x1="410" y1="50" x2="410" y2="150" class="grid"/>
+        <line x1="440" y1="50" x2="440" y2="150" class="grid"/>
+        <line x1="470" y1="50" x2="470" y2="150" class="grid"/>
+        <line x1="500" y1="50" x2="500" y2="150" class="grid"/>
+        <line x1="530" y1="50" x2="530" y2="150" class="grid"/>
+        <line x1="560" y1="50" x2="560" y2="150" class="grid"/>
+        <line x1="590" y1="50" x2="590" y2="150" class="grid"/>
+        <line x1="620" y1="50" x2="620" y2="150" class="grid"/>
+        <line x1="650" y1="50" x2="650" y2="150" class="grid"/>
+        <line x1="680" y1="50" x2="680" y2="150" class="grid"/>
+        <line x1="710" y1="50" x2="710" y2="150" class="grid"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Beat circles -->
+  <g id="beat-circles">
+    <!-- Accented beats (1st and 3rd quarter notes) -->
+    <circle cx="80" cy="100" r="15" class="beat accent"/>
+    <circle cx="170" cy="100" r="15" class="beat accent"/>
+    <!-- Unaccented beats -->
+    <circle cx="110" cy="100" r="10" class="beat"/>
+    <circle cx="140" cy="100" r="10" class="beat"/>
+    <circle cx="200" cy="100" r="10" class="beat"/>
+    <circle cx="230" cy="100" r="10" class="beat"/>
+    <circle cx="260" cy="100" r="10" class="beat"/>
+    <circle cx="290" cy="100" r="10" class="beat"/>
+    <circle cx="320" cy="100" r="10" class="beat"/>
+    <circle cx="350" cy="100" r="10" class="beat"/>
+    <circle cx="380" cy="100" r="10" class="beat"/>
+    <circle cx="410" cy="100" r="10" class="beat"/>
+    <circle cx="440" cy="100" r="10" class="beat"/>
+    <circle cx="470" cy="100" r="10" class="beat"/>
+    <circle cx="500" cy="100" r="10" class="beat"/>
+    <circle cx="530" cy="100" r="10" class="beat"/>
+    <circle cx="560" cy="100" r="10" class="beat"/>
+    <circle cx="590" cy="100" r="10" class="beat"/>
+    <circle cx="620" cy="100" r="10" class="beat"/>
+    <circle cx="650" cy="100" r="10" class="beat"/>
+    <circle cx="680" cy="100" r="10" class="beat"/>
+    <circle cx="710" cy="100" r="10" class="beat"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="50" y="180" class="text">Start</text>
+  <text x="750" y="180" class="text">End (repeat)</text>
+  <text x="400" y="30" class="text" text-anchor="middle">Snare Drum Ostinato - 24 beats per repetition</text>
+  <text x="400" y="200" class="text" text-anchor="middle">Red circles = accented beats, Blue circles = unaccented beats</text>
+</svg>
